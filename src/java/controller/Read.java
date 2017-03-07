@@ -8,6 +8,7 @@ package controller;
 import dbHelpers.ReadQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -84,7 +85,11 @@ public class Read extends HttpServlet {
                 String table = rq.getHTMLtable();
                 
                 //pass execution control to read.jsp along with the table
-        
+                request.setAttribute("table", table);
+                String url = "/read.jsp";
+                
+                RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+                dispatcher.forward(request, response);
         
         processRequest(request, response);
     }
