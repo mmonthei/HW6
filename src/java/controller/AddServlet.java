@@ -5,13 +5,16 @@
  */
 package controller;
 
+import dbHelpers.AddQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Books;
 
 /**
  *
@@ -75,14 +78,34 @@ public class AddServlet extends HttpServlet {
             throws ServletException, IOException {
         
             //get the data
+            String title = request.getParameter("title");
+            String author = request.getParameter("author");
+            String publisher = request.getParameter("publisher");
+            int rating = Integer.parseInt(request.getParameter("rating"));
+            String own = request.getParameter("own");
+            String read = request.getParameter("read");
+            
             
             //set up a book object
+            Books book = new Books();
+            book.setBookTitle(title);
+            book.setBookAuthor(author);
+            book.setBookPublisher(publisher);
+            book.setBookRating(rating);
+            book.setBookOwn(own);
+            book.setBookRead(read);
             
             //set up an addQuery object
+            AddQuery aq = new AddQuery();
             
             //pass the book to addQuery to add to the database
+            aq.doAdd(book);
             
             //pass execution control to the ReadServlet
+            String url ="/read";
+            
+            RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+            dispatcher.forward (request, response);
     }
 
     /**
