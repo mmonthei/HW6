@@ -68,7 +68,7 @@ public class ReadQuery {
         
         String table = "";
         
-        table += "<table border=1>";
+        table += "<table>";
         
         try {
             while(this.results.next()){
@@ -112,6 +112,9 @@ public class ReadQuery {
                 table += "<td>";
                 table += books.getBookRead();
                 table += "</td>";
+                
+                table += "<td>";
+                table += "<a href=delete?bookID=" + books.getBookID() + "> Delete </a>";
                 
                 table += "</tr>";
                 
