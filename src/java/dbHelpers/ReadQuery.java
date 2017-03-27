@@ -82,7 +82,6 @@ public class ReadQuery {
                 books.setBookOwn(this.results.getString("bookOwn"));
                 books.setBookRead(this.results.getString("bookRead"));
                 
-                
                 table += "<tr>";
                 
                 table += "<td>";

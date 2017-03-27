@@ -1,0 +1,33 @@
+body {
+
+	background-color: #D2B48C;
+        font-family: Veranda, Geneva, Arial, Helvetica;
+	font-size: 12pt;
+	}
+        
+table {
+    border-collapse: collapse;
+    background-color: #F08080;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    vertical-align: bottom;
+}
+
+th, td {
+    text-align: left;
+    padding: 15px;
+}
+
+th {
+    background-color: #FFFF99;
+    color: #696969;
+    height: 50px
+}
+
+tr:hover {background-color: #CCCCCC}
+
+tr:nth-child(even) {background-color: #EDEDED; color: black;}
