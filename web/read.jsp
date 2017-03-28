@@ -13,15 +13,6 @@
     <body>
         <h1>McKayla's Books</h1>
         
-    <tr> 
-        <th>BookID</th>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Publisher</th>
-        <th>Personal Rating</th>
-        <th>Own?</th>
-        <th>Read?</th>
-    </tr>
     
         
     <%= table %>   

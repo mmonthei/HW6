@@ -70,6 +70,18 @@ public class ReadQuery {
         
         table += "<table>";
         
+        table += "<tr>";
+        table += "<th>Book ID</th>";
+        table += "<th>Title</th>";
+        table += "<th>Author</th>";
+        table += "<th>Publisher</th>";
+        table += "<th>Personal Rating</th>";
+        table += "<th>Own?</th>";
+        table += "<th>Read?</th>";
+        table += "<th>Update/Delete</th>";
+        
+        table += "</tr>";
+        
         try {
             while(this.results.next()){
                 
