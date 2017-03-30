@@ -18,7 +18,7 @@
                 
             <tr>
                     <td class="right">Book ID:</td>
-                    <td><input type="text" name="id" value="<%= book.getBookID() %>" /></td>
+                    <td><input type="text" name="id" value="<%= book.getBookID() %>" readonly/></td>
             </tr>
             
             <tr>

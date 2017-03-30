@@ -1,6 +1,3 @@
-body {
 
-	background-color: #D2B48C;
-        font-family: Veranda, Geneva, Arial, Helvetica;
-	font-size: 12pt;
-	}
+
+input[readonly] {background-color: gray;}
