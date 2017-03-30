@@ -14,7 +14,7 @@
         <h1>McKayla's Books</h1>
         
     
-        
+    <table class="readTable">   
     <%= table %>   
         <br><br>
         

@@ -18,7 +18,7 @@
                 
             <tr>
                     <td class="right">Book ID:</td>
-                    <td><input type="text" name="ID" value="<%= book.getBookID() %>" /></td>
+                    <td><input type="text" name="id" value="<%= book.getBookID() %>" /></td>
             </tr>
             
             <tr>
@@ -28,29 +28,30 @@
             
             <tr>
                     <td class="right">Book Author</td>
-                    <td><input type="text" name="title" value="<%= book.getBookAuthor() %>" /></td>
+                    <td><input type="text" name="author" value="<%= book.getBookAuthor() %>" /></td>
             </tr>
             
             <tr>
                     <td class="right">Book Publisher</td>
-                    <td><input type="text" name="title" value="<%= book.getBookPublisher() %>" /></td>
+                    <td><input type="text" name="publisher" value="<%= book.getBookPublisher() %>" /></td>
             </tr>
             
             <tr>
                     <td class="right">Book Rating</td>
-                    <td><input type="text" name="title" value="<%= book.getBookRating() %>" /></td>
+                    <td><input type="text" name="rating" value="<%= book.getBookRating() %>" /></td>
             </tr>
             
             <tr>
                     <td class="right">Book Own</td>
-                    <td><input type="text" name="title" value="<%= book.getBookOwn() %>" /></td>
+                    <td><input type="text" name="own" value="<%= book.getBookOwn() %>" /></td>
             </tr>
             
             <tr>
                     <td class="right">Book Read</td>
-                    <td><input type="text" name="title" value="<%= book.getBookRead() %>" /></td>
+                    <td><input type="text" name="read" value="<%= book.getBookRead() %>" /></td>
             </tr>
             
+            <input type="reset" value="Clear" id="clear">
             <input type="submit" name="submit" value="Update" />
         </form>        
     </body>

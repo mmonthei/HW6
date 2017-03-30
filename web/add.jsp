@@ -43,6 +43,7 @@
                     <td><input type="text" name="read" value="" /></td>
             </tr>
             
+            <input type="reset" value="Clear" id="clear">
             <input type="submit" name="submit" value="Submit" />
         </form>
         
