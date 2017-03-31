@@ -10,5 +10,9 @@
         <h1>My Books Database</h1>
         
         <a href="read">View All Books</a>
+        
+        <br><br>
+        
+        <a href="search.jsp">Search All Books</a>
     </body>
 </html>

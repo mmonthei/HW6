@@ -1,3 +1,38 @@
-
-
 input[readonly] {background-color: gray;}
+
+body {
+
+	background-color: #D2B48C;
+        font-family: Veranda, Geneva, Arial, Helvetica;
+	font-size: 12pt;
+	}
+        
+.readTable, tr, th {
+
+    background-color: #FFFF99;
+    color: #696969;
+    height: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    vertical-align: bottom;
+}
+
+.readTable, td {
+    
+    border-collapse: collapse;
+    background-color: #F08080;
+    color: #FFFFFF;
+    width: 75%;
+    
+}
+
+.readTable tr:hover {background-color: #CCCCCC}
+
+.readTable tr:nth-child(even) {background-color: #EDEDED; color: black;}
+
+.right {text-align: right;}
+
+.add td {border: none; height: 25px; padding: 5px; font-weight: bold;}
+
+.update td {border: none; height: 25px; padding: 5px; font-weight: bold;}

@@ -20,5 +20,9 @@
         
         <a href="add">Add A New Book</a>
         
+        <br><br>
+        
+        <a href="search.jsp">Search All Books</a>
+        
     </body>
 </html>
