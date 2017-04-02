@@ -7,6 +7,15 @@
         <title>Search for a Book</title>
     </head>
     <body>
+        
+        <div class="wrap"> <!--div to hold all other divs -->
+        
+        <!-- Header -->
+        <%@include file="includes/header.jsp" %>
+
+        <!-- Menu -->
+        <%@include file="includes/menu.jsp" %>
+        
         <h1>Search for a Book</h1>
         
         <form name="searchForm" action="search" method="get">
@@ -19,5 +28,13 @@
             <input type="reset" value="Clear" id="clear">
             
         </form>
+        
+         </div> <!-- close main div -->
+    
+        <!-- Footer -->
+        <%@include file="includes/footer.jsp" %>
+        
+        </div> <!-- close the wrap div -->   
+        
     </body>
 </html>

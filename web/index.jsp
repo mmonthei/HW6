@@ -7,12 +7,29 @@
         <title>My Books</title>
     </head>
     <body>
-        <h1>My Books Database</h1>
+        <div class="wrap"> <!--div to hold all other divs -->
         
-        <a href="read">View All Books</a>
+        <!-- Header -->
+        <%@include file="includes/header.jsp" %>
+
+        <!-- Menu -->
+        <%@include file="includes/menu.jsp" %>
+            
+        <div class="main"> <!-- main div -->
+            
+            <h1>My Books Database</h1>
+
+            <a href="read">View All Books</a>
+
+            <br><br>
+
+            <a href="search.jsp">Search All Books</a>
         
-        <br><br>
+        </div> <!-- close main div -->
+    
+        <!-- Footer -->
+        <%@include file="includes/footer.jsp" %>
         
-        <a href="search.jsp">Search All Books</a>
+        </div> <!-- close the wrap div -->    
     </body>
 </html>

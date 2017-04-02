@@ -11,6 +11,16 @@
     
     
     <body>
+        
+        <div class="wrap"> <!--div to hold all other divs -->
+        
+        <!-- Header -->
+        <%@include file="includes/header.jsp" %>
+
+        <!-- Menu -->
+        <%@include file="includes/menu.jsp" %>
+        
+        
         <h1>McKayla's Books</h1>
         
     
@@ -23,6 +33,13 @@
         <br><br>
         
         <a href="search.jsp">Search All Books</a>
+        
+         </div> <!-- close main div -->
+    
+        <!-- Footer -->
+        <%@include file="includes/footer.jsp" %>
+        
+        </div> <!-- close the wrap div -->  
         
     </body>
 </html>

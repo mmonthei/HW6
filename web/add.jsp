@@ -7,6 +7,17 @@
         <title>Add A New Book</title>
     </head>
     <body>
+        
+        <div class="wrap"> <!--div to hold all other divs -->
+        
+        <!-- Header -->
+        <%@include file="includes/header.jsp" %>
+
+        <!-- Menu -->
+        <%@include file="includes/menu.jsp" %>
+            
+        <div class="main"> <!-- main div -->
+        
         <h1>Add A New Book</h1>
         
         <form name="addForm" action="addBook" method="get">
@@ -46,6 +57,13 @@
             <input type="reset" value="Clear" id="clear">
             <input type="submit" name="submit" value="Submit" />
         </form>
+        
+        </div> <!-- close main div -->
+    
+        <!-- Footer -->
+        <%@include file="includes/footer.jsp" %>
+        
+        </div> <!-- close the wrap div -->   
         
     </body>
 </html>
