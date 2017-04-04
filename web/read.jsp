@@ -20,6 +20,8 @@
         <!-- Menu -->
         <%@include file="includes/menu.jsp" %>
         
+        <div class="main"> <!-- main div -->
+        
         
         <h1>McKayla's Books</h1>
         

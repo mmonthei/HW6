@@ -16,6 +16,8 @@
         <!-- Menu -->
         <%@include file="includes/menu.jsp" %>
         
+        <div class="main"> <!-- main div -->
+        
         <h1>Search for a Book</h1>
         
         <form name="searchForm" action="search" method="get">
